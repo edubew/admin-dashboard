@@ -29,12 +29,68 @@ const Sidebar = () => (
 );
 
 const Aside = styled.section`
-background-color: var(--dark-background-color);
-height: 100%;
-width: max-content;
-padding: 2rem;
-display: flex;
-flex-direction: column;
+  background-color: var(--dark-background-color);
+  height: 100vh;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+
+  svg {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+  }
+
+  .brand {
+    svg {
+      font-size: 2.5rem;
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style-type: none;
+    li {
+      border-radius: 1rem;
+      padding: 0.5rem;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+       color: #fff;
+      }
+      &:hover {
+       box-shadow: 0 0 60px 8px var(--primary-color);
+       svg {
+       color: var(--primary-color);
+      }
+    }  
+  }
+  .selected {
+    box-shadow: 0 0 60px 8px var(--primary-color);
+    svg {
+    color: var(--primary-color);
+    }
+  }
+
+  .help {
+    svg {
+      cursor: pointer;
+      color: #fff;
+      transition: 0.5s ease-in-out;
+    }
+    &:hover {
+      svg {
+        color: var(--primary-color);
+      }
+    }
+  }
 `;
 
 export default Sidebar;
