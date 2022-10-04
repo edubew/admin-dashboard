@@ -3,8 +3,9 @@
 :root {
   --primary-color: rgb(201, 6, 39);
   --secondary-color: rgba(3, 3, 27, 0.7);
-  --dark-background-color: rgb(2, 2 15);
-  --font: 'Source Sans Pro',
+  --dark-background-color: rgb(2, 2, 15);
+  --font:
+    'Source Sans Pro',
     sans-serif;
 }
 
@@ -20,6 +21,6 @@ html {
 
 body {
   font-family: var(--font);
-  height: max-content;
+  height: 100%;
   overflow-x: hidden;
 }
