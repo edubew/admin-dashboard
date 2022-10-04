@@ -4,7 +4,8 @@
   --primary-color: rgb(201, 6, 39);
   --secondary-color: rgba(3, 3, 27, 0.7);
   --dark-background-color: rgb(2, 2, 15);
-  --font: 'Source Sans Pro',
+  --font:
+    'Source Sans Pro',
     sans-serif;
 }
 
